@@ -9,33 +9,37 @@
 # 3. Calculates the Average avg.
 # # 4. Determines the grade using the following conditions:
 
-stuname = input("student name: ")
-sub1 = int(input("subject1 : "))
-sub2 = int(input("subject2 : "))
-sub3 = int(input("subject3 : "))
+stuname = input("Enter student name: ")
 
-avg = int((sub1 + sub2 + sub3) / 3)
-print(avg)
+sub1 = float(input("\nEnter Math marks: "))
+sub2 = float(input("Enter English marks: "))
+sub3 = float(input("Enter Python marks: "))
 
-if avg >= 80 and avg <= 100:
-    print(f" Student Name: {stuname} \n Average marks: {avg} \n Grade: A+")
+# Calculate average
+avg = round((sub1 + sub2 + sub3) / 3, 2)
 
-elif avg >= 70 and avg <= 79:
-    print(f" Student Name: {stuname} \n Average marks: {avg} \n Grade: A")
+# Validate marks
+if sub1 < 0 or sub1 > 100 or sub2 < 0 or sub2 > 100 or sub3 < 0 or sub3 > 100:
+    print("\n\nInvalid marks")
 
-elif avg >= 60 and avg <= 69:
-    print(f" Student Name: {stuname} \n Average marks: {avg} \n Grade: A-")
-
-elif avg >= 50 and avg <= 59:
-    print(f" Student Name: {stuname} \n Average marks: {avg} \n Grade: B")
-
-elif avg >= 40 and avg <= 49:
-    print(f" Student Name: {stuname} \n Average marks: {avg} \n Grade: C")
-
-elif avg < 40:
-    print(f" Student Name: {stuname} \n Average marks: {avg} \n Grade: F")
-
-
+# Calculate grade and output
 else:
-    print("invalid marks")
+    if avg >= 80 and avg <= 100:
+        print(f" \n\nStudent Name: {stuname} \nAverage marks: {avg} \nGrade: A+")
+
+    elif avg >= 70 and avg <= 79:
+        print(f" \n\nStudent Name: {stuname} \nAverage marks: {avg} \nGrade: A")
+
+    elif avg >= 60 and avg <= 69:
+        print(f" \n\nStudent Name: {stuname} \nAverage marks: {avg} \nGrade: A-")
+
+    elif avg >= 50 and avg <= 59:
+        print(f" \n\nStudent Name: {stuname} \nAverage marks: {avg} \nGrade: B")
+
+    elif avg >= 40 and avg <= 49:
+        print(f" \n\nStudent Name: {stuname} \nAverage marks: {avg} \nGrade: C")
+
+    else:
+        print(f" \n\nStudent Name: {stuname} \nAverage marks: {avg} \nGrade: F")
+
 

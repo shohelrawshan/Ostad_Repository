@@ -81,21 +81,89 @@
 
 # a = 'Hello'
 # print(a.upper().lower())
-a = int(input())
-b = int(input())
+# a = int(input())
+# b = int(input())
 # c = a + b
 # print(c)
 # print(a > b)
-if a < b:
-    print("do sum a+b")
-    print(a+b)
-elif a > b:
-    print("subtract a from b")
-    print(a-b)
-else:
-    print("a and b is equal")
-    print(a==b)
-    print("completed")
+# if a < b:
+#     print("do sum a+b")
+#     print(a+b)
+# elif a > b:
+#     print("subtract a from b")
+#     print(a-b)
+# else:
+#     print("a and b is equal")
+#     print(a==b)
+#     print("completed")
+
+# Len = "w3resource.com"
+# print(type(Len))
+
+# x = 5
+# print(type(x))
+
+# l = ["apple", "banana", "cherry"]
+# print(l)
+
+# Modify strings
+# a = " Hello World!, It is my first code "
+# print(a)
+# print(a.upper())
+# print(a.lower())
+# print(a.strip())
+# print(a.replace("H", "J"))
+# print(a.split(","))
+
+#slicing string
+# b = "Bangladesh, is my country"
+# print(b[2:5])
+# print(b[2:])
+# print(b[:5])
+
+#String Concatenation
+# a = "Hello"
+# b = "World"
+# c = a + " " + b
+# print(c)
+
+#String Format (F strings)
+# age = 36
+# #This will produce an error:
+# txt = f"My name is John, i am now {age}"
+# print(txt)
+
+# price = input()
+# txt = f"The price is {price} dollars"
+# print(txt)
 
 
-    
+# price = 59
+# txt = f"Th
+# e price is {price:.2f} dollars"
+# print(txt)
+
+# price = 59
+# txt = f"The price is {price * 20} dollars"
+# print(txt)
+
+
+
+# 1. Ask the user for their name.
+# 2. Ask for their age.
+# 3. Ask for two numbers.
+# 4. Calculate the sum, subtraction, multiplication, and division of those two numbers.
+# 5. Display all information in a well-formatted output using f-strings
+
+# Expected Output Example:
+# Enter your name: Rahim
+# Enter your age: 22
+# Enter first number: 20
+# Enter second number: 10
+# Hello, Rahim!
+# Your age is 22.
+# Addition: 30
+# Subtraction: 10
+# Multiplication: 200
+# Division: 2.0
+
